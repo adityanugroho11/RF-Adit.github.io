@@ -1,56 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Download - RF Adit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <nav class="navbar__container">
-    <a href="index.html" id="navbar__logo"><i class="fas fa-gem"></i> Rising Force Adit</a>
-    <div id="mobile-menu" class="navbar__toggle" aria-hidden="true"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
-    <ul class="navbar__menu" id="navMenu">
-      <li><a href="index.html" class="navbar__links">Home</a></li>
-      <li><a href="news.html" class="navbar__links">News</a></li>
-    </ul>
-  </nav>
-
-  <main class="about-section">
-    <h1 class="section-title reveal-top">Download Client</h1>
-    <p class="about-text reveal-bottom">Pilih package client RF Adit (demo). Link download bersifat contoh — ganti dengan file servermu.</p>
-
-    <div class="race-container">
-      <div class="race-card reveal-left">
-        <img src="3abc.jpg" alt="Windows client">
-        <h2>Windows Client</h2>
-        <p>Setup installer (x64). Size: ~1.2 GB (contoh).</p>
-        <button class="main__btn download-btn" data-file="rf-client-windows.zip">Download</button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Download - RF Adit</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar__container">
+      <a href="index.html" id="navbar__logo"
+        ><i class="fas fa-gem"></i> Rising Force Adit</a
+      >
+      <div id="mobile-menu" class="navbar__toggle" aria-hidden="true">
+        <span class="bar"></span><span class="bar"></span
+        ><span class="bar"></span>
       </div>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="index.html" class="navbar__links">Home</a></li>
+        <li><a href="register.html" class="navbar__links">Register</a></li>
+      </ul>
+    </nav>
 
-      <div class="race-card reveal-right">
-        <img src="siacc.jpg" alt="Patch">
-        <h2>Patch & Launcher</h2>
-        <p>Patching tool & launcher (contoh).</p>
-        <button class="main__btn download-btn" data-file="rf-patch.zip">Download</button>
+    <main class="about-section">
+      <h1 class="section-title reveal-top">Download Client</h1>
+      <p class="about-text reveal-bottom">
+        Download Fullclient & Patch RF Adit terbaru disini. Pastikan untuk
+        mengikuti instruksi instalasi setelah mengunduh file.
+      </p>
+      <div class="race-container">
+        <div class="race-card reveal-left">
+          <img src="3abc.jpg" alt="Windows client" />
+          <h2>Windows Client</h2>
+          <p>Setup installer (x64). Size: ~1.2 GB (contoh).</p>
+          <button
+            class="main__btn download-btn"
+            data-file="rf-client-windows.zip"
+          >
+            Download
+          </button>
+        </div>
+
+        <div class="race-card reveal-right">
+          <img src="siacc.jpg" alt="Patch" />
+          <h2>Patch & Launcher</h2>
+          <p>Patching tool & launcher (contoh).</p>
+          <button class="main__btn download-btn" data-file="rf-patch.zip">
+            Download
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" style="display: none">
+      <div class="modal-inner">
+        <h3>Download</h3>
+        <p id="modalText">Preparing...</p>
+        <div class="modal-actions">
+          <a id="modalLink" class="button" href="#" download>Start Download</a>
+          <button id="modalClose" class="button" style="background: #333">
+            Close
+          </button>
+        </div>
       </div>
     </div>
-  </main>
 
-  <!-- Modal -->
-  <div id="modal" class="modal" style="display:none;">
-    <div class="modal-inner">
-      <h3>Download</h3>
-      <p id="modalText">Preparing...</p>
-      <div class="modal-actions">
-        <a id="modalLink" class="button" href="#" download>Start Download</a>
-        <button id="modalClose" class="button" style="background:#333">Close</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
